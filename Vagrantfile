@@ -8,5 +8,4 @@ Vagrant.configure("2") do |config|
 	end
         config.vm.synced_folder "ericsz2", "/home/vagrant/modules"
 	config.vm.provision :shell, path: "provision.sh"
-        config.vm.provision :shell, path: "boot_custom_kernel.sh", run: 'always'
 end

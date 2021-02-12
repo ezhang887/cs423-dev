@@ -21,5 +21,3 @@ make -j $(getconf _NPROCESSORS_ONLN) deb-pkg LOCALVERSION=-ericsz2
 cd ..
 dpkg -i linux-image-4.4.0-*_4.4.0-*_amd64.deb
 dpkg -i linux-headers-4.4.0-*_4.4.0-*_amd64.deb
-
-grub-reboot '1>4' && sudo reboot
