@@ -2,7 +2,7 @@
 
 set -e
 
-echo "ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/student
+echo "vagrant ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/vagrant
 
 APT_FLAGS="-qq -y -o Dpkg::Use-Pty=0"
 export DEBIAN_FRONTEND=noninteractive
